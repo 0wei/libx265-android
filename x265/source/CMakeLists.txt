@@ -79,7 +79,7 @@ else()
 endif()
 
 if(UNIX)
-    list(APPEND PLATFORM_LIBS pthread)
+    # list(APPEND PLATFORM_LIBS pthread)
     find_library(LIBRT rt)
     if(LIBRT)
         list(APPEND PLATFORM_LIBS rt)
